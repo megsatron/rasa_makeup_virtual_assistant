@@ -1,0 +1,184 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: picnic
+  examples: |
+    - what should I wear to a picnic?
+    - what makeup look should I wear to a picnic?
+    - what makeup should I wear to a picnic?
+    - I'm going to a picnic, what should I wear?
+    - I'm going to a picnic, what makeup would you recommend?
+    - what makeup would you recommend for a picnic?
+    - what look would you recommend for a picnic?
+
+- intent: wedding
+  examples: |
+    - what should I wear to a wedding?
+    - what makeup look should I wear to a wedding?
+    - what makeup should I wear to a wedding?
+    - I'm going to a wedding, what should I wear?
+    - I'm going to a wedding, what makeup would you recommend?
+    - what makeup would you recommend for a wedding?
+    - what look would you recommend for a wedding?
+
+- intent: office
+  examples: |
+    - what should I wear to the office?
+    - what makeup look should I wear to the office?
+    - what makeup should I wear to the office?
+    - I'm going to the office, what should I wear?
+    - I'm going to the office, what makeup would you recommend?
+    - what makeup would you recommend for the office?
+    - what look would you recommend for the office?
+
+- intent: photoshoot
+  examples: |
+    - what should I wear to a photoshoot?
+    - what makeup look should I wear to a photoshoot?
+    - what makeup should I wear to a photoshoot?
+    - I'm going to a photoshoot, what should I wear?
+    - I'm going to a photoshoot, what makeup would you recommend?
+    - what makeup would you recommend for a photoshoot?
+    - what look would you recommend for a photoshoot?
+
+- intent: dewy
+  examples: |
+    - what products would you recommend for a dewy look?
+    - what are some good dewy makeup products?
+    - what should I use for a dewy look?
+    - what products would be best for a dewy look?
+    - what products should I use for a dewy look?
+
+- intent: natural
+  examples: |
+    - what products would you recommend for a natural matte look?
+    - what are some good natural matte makeup products?
+    - what should I use for a natural matte look?
+    - what products would be best for a natural matte look?
+    - what products should I use for a natural matte look?
+
+- intent: editorial
+  examples: |
+    - what products would you recommend for an editorial look?
+    - what are some good editorial makeup products?
+    - what should I use for an editorial look?
+    - what products would be best for an editorial look?
+    - what products should I use for an editorial look?
+
+- intent: glam
+  examples: |
+    - what products would you recommend for a glam look?
+    - what are some good glam makeup products?
+    - what should I use for a glam look?
+    - what products would be best for a glam look?
+    - what products should I use for a glam look?
+
+- intent: settingspray
+  examples: |
+    - do I need to wear setting spray with this look?
+    - is setting spray necessary?
+    - should I use setting spray?
+    - do I need to use setting spray?
+    - should I wear setting spray?
+
+- intent: thanks
+  examples: |
+    - thank you
+    - thanks
+    - perfect
+    - thank you so much
+    - thanks a ton
+    - thanks a bunch
+    - great
+    - cool
+    - sounds good
+    - thanks a lot
+
+- intent: affirm_order
+  examples: |
+    - yes
+    - yes, I would
+    - yeah
+    - yes please
+    - yeah that would be great
+    - yup I'd love that
+    - yup
+
+- intent: deny
+  examples: |
+    - no
+    - no, thanks
+    - no, thank you
+    - nah, I'm good
+    - no, I'm okay for now
+    - nope
+
+- intent: find_store
+  examples: |
+    - i want to know your store locations
+    - what locations do you have
+    - where are your locations
+    - where is the nearest store
+    - where is the closest store
+    - where can I try out the products
+
+- intent: cool_undertones
+  examples: |
+    - what colors complement a cool undertone?
+    - I have cool undertones, what colors would suit me?
+    - what goes with cool undertones?
+    - what colors match a cool undertone?
+
+- intent: warm_undertones
+  examples: |
+    - what colors complement a warm undertone?
+    - I have warm undertones, what colors would suit me?
+    - what goes with warm undertones?
+    - what colors match a warm undertone?
+
+- intent: neutral_undertones
+  examples: |
+    - what colors complement a neutral undertone?
+    - I have neutral undertones, what colors would suit me?
+    - what goes with neutral undertones?
+    - what colors match a neutral undertone?
+
+- intent: olive_undertones
+  examples: |
+    - what colors complement an olive undertone?
+    - I have olive undertones, what colors would suit me?
+    - what goes with olive undertones?
+    - what colors match an olive undertone?
+
+- intent: makeup_remover
+  examples: |
+    - what should I use to remove my makeup?
+    - how should I remove my makeup?
+    - how can I remove my makeup?
+    - how do I remove my makeup?

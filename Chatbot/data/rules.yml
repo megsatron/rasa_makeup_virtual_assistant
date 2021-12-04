@@ -1,0 +1,95 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say you're welcome when user says thanks
+  steps:
+  - intent: thanks
+  - action: utter_welcome
+
+- rule: Suggest a picnic look anytime the user asks for a picnic suggestion
+  steps:
+  - intent: picnic
+  - action: utter_picnic_suggestion
+
+- rule: Suggest a wedding look anytime the user asks for a wedding suggestion
+  steps:
+  - intent: wedding
+  - action: utter_wedding_suggestion
+
+- rule: Suggest a photoshoot look anytime the user asks for a photoshoot suggestion
+  steps:
+  - intent: photoshoot
+  - action: utter_photoshoot_suggestion
+
+- rule: Suggest an office look anytime the user asks for an office suggestion
+  steps:
+  - intent: office
+  - action: utter_office_suggestion
+
+- rule: Recommend or don't recommend setting spray based on look
+  steps:
+  - intent: settingspray
+  - action: action_recommend_settingspray
+
+- rule: Activate form
+  steps:
+  - intent: affirm_order
+  - action: order_form
+  - active_loop: order_form
+
+- rule: Submit form
+  condition:
+  - active_loop: order_form
+  steps:
+  - action: order_form
+  - active_loop: null
+  - slot_was_set:
+      - requested_slot: null
+  - action: action_validate_order
+
+- rule: Activate location form
+  steps:
+  - intent: find_store
+  - action: location_form
+  - active_loop: location_form
+
+- rule: Submit location form
+  condition:
+  - active_loop: location_form
+  steps:
+  - action: location_form
+  - active_loop: null
+  - slot_was_set:
+      - requested_slot: null
+  - action: action_check_location
+
+- rule: Suggest colors that complement a cool skin undertone
+  steps:
+  - intent: cool_undertones
+  - action: action_cool_undertones
+
+- rule: Suggest colors that complement a warm skin undertone
+  steps:
+  - intent: warm_undertones
+  - action: action_warm_undertones
+
+- rule: Suggest colors that complement a neutral skin undertone
+  steps:
+  - intent: neutral_undertones
+  - action: action_neutral_undertones
+
+- rule: Suggest colors that complement an olive skin undertone
+  steps:
+  - intent: olive_undertones
+  - action: action_olive_undertones
+
+- rule: Suggest makeup remover
+  steps:
+  - intent: makeup_remover
+  - action: action_makeup_remover

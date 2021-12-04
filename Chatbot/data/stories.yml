@@ -1,0 +1,247 @@
+version: "2.0"
+
+stories:
+
+- story: picnic path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: picnic
+  - action: utter_picnic_suggestion
+  - intent: thanks
+  - action: utter_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: office path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: office
+  - action: utter_office_suggestion
+  - intent: thanks
+  - action: utter_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: photoshoot path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: photoshoot
+  - action: utter_photoshoot_suggestion
+  - intent: thanks
+  - action: utter_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: wedding path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: wedding
+  - action: utter_wedding_suggestion
+  - intent: thanks
+  - action: utter_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: dewy recommendation path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: dewy
+  - action: action_recommend_dewy
+  - intent: deny
+  - action: utter_no_worries
+  - intent: deny
+  - action: utter_goodbye
+
+- story: glam recommendation path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: glam
+  - action: action_recommend_glam
+  - intent: deny
+  - action: utter_no_worries
+  - intent: deny
+  - action: utter_goodbye
+
+- story: editorial recommendation path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: editorial
+  - action: action_recommend_editorial
+  - intent: deny
+  - action: utter_no_worries
+  - intent: deny
+  - action: utter_goodbye
+
+- story: natural recommendation path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: natural
+  - action: action_recommend_natural
+  - intent: deny
+  - action: utter_no_worries
+  - intent: deny
+  - action: utter_goodbye
+
+- story: wedding path setting spray
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: wedding
+  - action: utter_wedding_suggestion
+  - intent: settingspray
+  - action: action_recommend_settingspray
+  - intent: thanks
+  - action: utter_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: photoshoot path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: photoshoot
+  - action: utter_photoshoot_suggestion
+  - intent: settingspray
+  - action: action_recommend_settingspray
+  - intent: thanks
+  - action: utter_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: editorial deny order path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: editorial
+  - action: action_recommend_editorial
+  - intent: deny
+  - action: utter_no_worries
+  - intent: settingspray
+  - action: action_recommend_settingspray
+  - intent: thanks
+  - action: utter_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: natural deny order path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: natural
+  - action: action_recommend_natural
+  - intent: deny
+  - action: utter_no_worries
+  - intent: settingspray
+  - action: action_recommend_settingspray
+  - intent: thanks
+  - action: utter_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: dewy deny order path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: dewy
+  - action: action_recommend_dewy
+  - intent: deny
+  - action: utter_no_worries
+  - intent: settingspray
+  - action: action_recommend_settingspray
+  - intent: thanks
+  - action: utter_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: glam deny order path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: glam
+  - action: action_recommend_glam
+  - intent: deny
+  - action: utter_no_worries
+  - intent: settingspray
+  - action: action_recommend_settingspray
+  - intent: thanks
+  - action: utter_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: natural buy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: natural
+  - action: action_recommend_natural
+  - intent: affirm_order
+  - action: order_form
+  - action: action_validate_order
+  - intent: thanks
+  - action: utter_welcome
+  - intent: settingspray
+  - action: action_recommend_settingspray
+  - intent: thanks
+  - action: utter_welcome
+
+- story: editorial buy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: editorial
+  - action: action_recommend_editorial
+  - intent: affirm_order
+  - action: order_form
+  - action: action_validate_order
+  - intent: settingspray
+  - action: action_recommend_settingspray
+  - intent: thanks
+  - action: utter_welcome
+
+- story: glam buy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: glam
+  - action: action_recommend_glam
+  - intent: affirm_order
+  - action: order_form
+  - action: action_validate_order
+  - intent: settingspray
+  - action: action_recommend_settingspray
+  - intent: thanks
+  - action: utter_welcome
+
+- story: dewy buy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: dewy
+  - action: action_recommend_dewy
+  - intent: affirm_order
+  - action: order_form
+  - action: action_validate_order
+  - intent: settingspray
+  - action: action_recommend_settingspray
+  - intent: thanks
+  - action: utter_welcome
+
+- story: find store
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_store
+  - action: location_form
+  - action: action_check_location
+  - intent: thanks
+  - action: utter_welcome
+  - intent: goodbye
+  - action: utter_goodbye

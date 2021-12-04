@@ -1,0 +1,106 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - thanks
+  - picnic
+  - wedding
+  - photoshoot
+  - office
+  - dewy
+  - glam
+  - editorial
+  - natural
+  - affirm_order
+  - deny
+  - settingspray
+  - find_store
+  - cool_undertones
+  - warm_undertones
+  - neutral_undertones
+  - olive_undertones
+  - makeup_remover
+
+forms:
+  order_form:
+    product_name:
+      - type: from_text
+
+    address:
+      - type: from_text
+
+  location_form:
+    city:
+      - type: from_text
+
+slots:
+  product_name:
+    type: text
+
+  address:
+     type: text
+
+  city:
+    type: text
+
+responses:
+  utter_greet:
+  - text: "Hi, welcome to Sephora! I am your virtual makeup assistant. How can I help you?"
+
+  utter_picnic_suggestion:
+  - text: "For a picnic, I would recommend a dewy, sparkly look!"
+
+  utter_wedding_suggestion:
+  - text: "For a wedding, I would recommend a fabulous glam look!"
+
+  utter_office_suggestion:
+  - text: "For the office, I would recommend a natural matte look!"
+
+  utter_photoshoot_suggestion:
+  - text: "For a photoshoot, I would recommend a fierce, editorial look!"
+
+  utter_goodbye:
+  - text: "Bye! Enjoy your makeup! Thanks for shopping at Sephora!"
+
+  utter_welcome:
+  - text: "You're welcome!"
+
+  utter_get_order:
+  - text: "Which item would you like to order?"
+
+  utter_check_inventory:
+  - text: "Which product would you like to order? I'll check our inventory."
+
+  utter_no_worries:
+  - text: "Okay, no problem! Do you have any other questions?"
+
+  utter_ask_product_name:
+  - text: What product would you like?
+
+  utter_ask_address:
+  - text: What is your address?
+
+  utter_ask_city:
+  - text: What city are you looking for store locations in?
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+actions:
+  - action_recommend_dewy
+  - action_recommend_glam
+  - action_recommend_editorial
+  - action_recommend_natural
+  - action_recommend_settingspray
+  - action_validate_order
+  - action_check_location
+  - action_cool_undertones
+  - action_warm_undertones
+  - action_neutral_undertones
+  - action_olive_undertones
+  - action_makeup_remover
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
