@@ -2,7 +2,7 @@
 Final project for CMPE 252 Fall 2021 by Megha Jain.
 
 ## About The Bot
-This bot is virstual assistant for a makeup store (Sephora). It does a combination of recommendations + query answerting + checking inventory and taking orders from the customer. 
+This bot is virstual assistant for a makeup store (Sephora). The bot is capable of doing a combination of recommendations + query answering + checking inventory and taking orders from the customer. 
 
 ## Notable Parts
 One of the more difficult and notable parts to implement was using the tracker's events to search for/establish a previous context for the conversion. I got this idea from my research paper presentation where the paper my team presented on, emphasized the importance and usefulness of context-driven chatbots.
